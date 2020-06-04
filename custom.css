@@ -3,6 +3,9 @@ body{
 
 background-color: rgb(188, 204, 218);
 }
+header{
+background-color: rgb(180, 200, 208);  
+}
 
 
 
@@ -11,4 +14,9 @@ font-size:30px;
 font-family:"Comic Sans Ms","TSCu_Comic";
 color:white;
 text-align:center;
+}
+.menu{
+height:50px;
+width:80%;
+  
 }
