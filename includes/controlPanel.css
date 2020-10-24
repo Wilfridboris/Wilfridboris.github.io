@@ -1,0 +1,136 @@
+
+/*the Control Panel for my menus*/
+.controlPanel{
+    float: left;
+    background: rgb(20, 20, 20);
+    height: 600px;
+    width: 200px;
+    color: #f7fff7;
+}
+/*my grid*/
+.myGrid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+   /* column-gap:20px; no gap*/
+}
+/*Panel for my Image*/
+.Panel{
+    width: 1000px;
+    
+    background-image: url(/img/burnaboy.jpg);
+    background-size: cover;
+    background-position:60% 20%;
+    padding: 170px 0;
+    overflow: hidden;
+    
+    
+   
+
+}
+/*very important for the logos display*/
+.recal{
+   
+   float: left;
+/*very important for the logos display*/     
+ 
+}
+
+.Appli .logos {
+    display: inline-block;
+    text-align: center;
+    background: rgb(233, 182, 87);
+    border-radius: 50px;
+    padding: 20px 30px;
+    margin: 20px;
+    
+    
+ 
+}
+.Appli .recal .logos a{
+    text-decoration: none;
+}
+.Appli .recal :hover{
+   
+    background: rgb(172, 58, 58);
+ 
+      
+ 
+}
+
+
+
+
+
+/*menus control panel*/
+.menu-items li{
+    list-style-type: none;
+    padding-bottom: 12px;
+   
+} 
+/*link control panel*/
+.menu-items a{
+    color: gray;
+    
+} 
+      
+    
+
+.menu_list{
+    list-style-type: none;
+    display: flex; /*flex the elements*/
+    padding: 0;
+    
+    
+    
+}
+.menu_list a{
+    padding: 15px; /*gap between a elements*/
+    margin: 12px;
+    color: #f7fff7;
+    font-size: 18px;
+    
+}
+
+/*Bnt Style*/ /*select style*/
+.menu_list .btn{
+    border-bottom: 3px solid rgb(7, 68, 7);
+    
+    
+}
+
+/*All media Screen */
+
+@media screen and (max-width:1482px){
+    .Panel{
+        width:800px
+    }
+}
+@media screen and (max-width:1290px){
+    .Panel{
+        width:600px;
+    }
+}
+@media screen and (max-width:1077px){
+    .Panel{
+        width:400px;
+    }
+}
+@media screen and (max-width:877px){
+    .Panel{
+        width:200px;
+    }
+    .menu_list{
+        display: grid; 
+        
+    }
+}
+@media screen and (max-width:396px){
+    .Panel{
+        width:150px;
+        
+    }
+
+}
+
+
+
