@@ -19,7 +19,7 @@ app.directive('headBase',()=>{
 app.controller("leftMenu",function(){
     /**left menu state change */
    this.change=function(e){
-       //e.preventDefault();
+       e.preventDefault();
        se=document.querySelectorAll('a.selected');
         se[0].removeAttribute('class');
         e.srcElement.setAttribute('class','selected');
