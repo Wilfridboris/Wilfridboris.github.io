@@ -8,18 +8,20 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
+    <main >
         <!--My left menu bar begin-->
-        <div class="controlPanel">
-            <ul class="menu-items">
-                <li >
-                    <a href="">Home</a>
+        <div ng-controller="leftMenu as lfm" class="controlPanel">
+            <ul>
+                <li>
+                    <!--get the event and make the page don't reload-->
+                    <!--state of the left menu-->
+                    <a  ng-click="lfm.change($event)" class="selected" href="index.html">Home</a>
                 </li>
                 <li >
-                    <a href="">Browse</a>
+                    <a ng-click="lfm.change($event)" href="#">Browse</a>
                 </li>
                 <li >
-                    <a href="">Listen</a>
+                    <a ng-click="lfm.change($event)"  href="#">Listen</a>
                 </li>
             </ul>
         </div>
@@ -70,8 +72,7 @@
         </h1>
     </div>
 
-    
-    </main>
+    </main> 
     
 </body>
 </html>

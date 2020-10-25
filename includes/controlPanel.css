@@ -6,6 +6,7 @@
     height: 600px;
     width: 200px;
     color: #f7fff7;
+    
 }
 /*my grid*/
 .myGrid{
@@ -48,6 +49,7 @@
 }
 .Appli .recal .logos a{
     text-decoration: none;
+    display: block;
 }
 .Appli .recal :hover{
    
@@ -62,16 +64,26 @@
 
 
 /*menus control panel*/
-.menu-items li{
+ .controlPanel li{
     list-style-type: none;
-    padding-bottom: 12px;
+    padding-bottom: 15px;
+ 
+    
    
 } 
 /*link control panel*/
-.menu-items a{
+ .controlPanel a{
     color: gray;
+    display: block;
+    padding-left: 20px;
+    
     
 } 
+.selected{
+    border-left: 3px solid green;
+}
+
+
       
     
 
