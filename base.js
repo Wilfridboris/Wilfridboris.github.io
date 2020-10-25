@@ -45,6 +45,12 @@ app.directive('controlPanel',()=>{
         'templateUrl':'/includes/controlPanel.html'
     }
 });
+app.directive('subscription',()=>{
+    return{
+        'restrict':'E',
+        'templateUrl':'subscription.html'
+    }
+});
 
 })();  
 
