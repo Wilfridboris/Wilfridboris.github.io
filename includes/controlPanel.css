@@ -3,10 +3,13 @@
 .controlPanel{
     float: left;
     background: rgb(20, 20, 20);
-    height: 600px;
+    height: 500px;
     width: 200px;
     color: #f7fff7;
     
+}
+.controlPanel ul{
+    padding-left: 10px;
 }
 /*my grid*/
 .myGrid{
@@ -17,46 +20,114 @@
 /*Panel for my Image*/
 .Panel{
     width: 1000px;
+    height: 500px;
+    text-align: center;
+    position: relative;/*fix the panel for the absolute elements don't move out*/
     
-    background-image: url(/img/burnaboy.jpg);
+    /*
+    background-image: url(/img/burnaboy-fond.jpg);
     background-size: cover;
     background-position:60% 20%;
     padding: 170px 0;
     overflow: hidden;
+    */
     
     
    
 
 }
+/*
+.Panel img{
+    
+    filter: blur(2px);
+    
+    
+}
+*/
+
+.Appli{
+    background:  rgb(22, 22, 22);
+    border-top: 1px solid rgb(41, 40, 40);
+}
+.infos{
+    background:  rgb(22, 22, 22);
+    display: grid;
+    grid-template-columns: 0.4fr 2fr;
+   
+}
+/*my left infos for all artist begin*/
+.infos-left ul{
+    padding-left: 10px;
+}
+.infos-left li{
+    list-style: none;
+  
+      
+}
+.infos-left li>a{
+    text-decoration: none;
+    font-size: 18px;
+    color: gray;
+      
+}
+.infos-left li>a:hover{
+    color: rgb(63, 63, 63);
+      
+}
+/*my left infos for all artist end*/
 /*very important for the logos display*/
-.recal{
-   
-   float: left;
-/*very important for the logos display*/     
- 
-}
 
-.Appli .logos {
+
+.logos {
     display: inline-block;
     text-align: center;
-    background: rgb(233, 182, 87);
+    background: #f7fff7;
     border-radius: 50px;
     padding: 20px 30px;
     margin: 20px;
     
     
+    
  
 }
-.Appli .recal .logos a{
+.recal .logos a{
     text-decoration: none;
     display: block;
-}
-.Appli .recal :hover{
+    
    
-    background: rgb(172, 58, 58);
+}
+.recal :hover{
+   
+    background: rgb(172, 58, 58);    
  
-      
- 
+}
+/*infos center begin*/
+.infos-center{
+    width: 900px;
+}
+.infos-center a{
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+}
+.infos-center .logos:hover{
+    background: #c9cec9;
+}
+.infos-center .logos a:hover{
+    color: black;
+}
+.infos-center h2{
+    color: #f7fff7;
+    padding:10px;
+    border-bottom: 1px solid rgb(56, 55, 55) ;
+}
+.infos-center img{
+   border-radius: 80px;
+}
+/*infos centerend*/
+/*artist and composteur style*/
+
+#writeBy{
+    font-size: 18px;
 }
 
 
@@ -88,18 +159,28 @@
     
 
 .menu_list{
+    position: absolute;
+    top: 50%;
     list-style-type: none;
     display: flex; /*flex the elements*/
-    padding: 0;
+   
     
     
     
 }
+.panel-title{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    color: #f7fff7;
+    font-family: 'Times New Roman', Times, serif;
+
+}
 .menu_list a{
-    padding: 15px; /*gap between a elements*/
-    margin: 12px;
+   
     color: #f7fff7;
     font-size: 18px;
+    margin-left: 30px;
     
 }
 

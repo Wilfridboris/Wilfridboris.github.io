@@ -17,6 +17,8 @@ app.directive('headBase',()=>{
 //my menu panel control
 
 app.controller("leftMenu",function(){
+    this.articles=article;
+
     /**left menu state change */
    this.change=function(e){
        e.preventDefault();
@@ -51,6 +53,17 @@ app.directive('subscription',()=>{
         'templateUrl':'subscription.html'
     }
 });
+
+/**my Mcd with JSON */
+var article=[
+    
+        {title:'Davido',by:'francois xavier',image:'img/davido.jpeg'},
+        {title:'Singula',by:'Sweden george',image:'img/singula.jpg'},
+        {title:'Burna Boy',by:'England jean',image:'img/burnaboy.jpg'}
+
+]
+
+
 
 })();  
 
