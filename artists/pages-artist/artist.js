@@ -1,5 +1,32 @@
 (function(){
+    //get all necessary files;
+    var fondArtist;
+    var xhr=new XMLHttpRequest();
+    xhr.onload=function(){
+        if(xhr.status===200){
+            responseObject=JSON.parse(xhr.responseText);
+            fondArtist=responseObject.fondArtist;
+            
+        };
+    };
+    xhr.open('GET','./database/fond.json',true);
+    xhr.send(null);  
+    current=window.location.pathname;
+    var artistName=current.split('/')[3];
+    artistName=artistName.split('.')[0];
+    console.log(artistName);
+    console.log(current);
+    
     var art=angular.module('arts',[]);
+    art.controller('pane',function(){
+        for(var x in fondArtist){
+            if(artistName==fondArtist[x].title){
+                this.fond=fondArtist[x].imageFond;
+                this.titreFond=fondArtist[x].title;
+            }
+        }
+
+    });
     art.controller("leftMenu",function($http){
         //this.articles=article;
         /*

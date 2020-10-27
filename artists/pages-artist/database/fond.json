@@ -1,0 +1,9 @@
+{
+    "fondArtist":[
+    
+    {"title":"Davido","imageFond":"./img/davidofond.jpg"},
+    {"title":"Singula","imageFond":"./img/singulafond.jpg"},
+    {"title":"BurnaBoy","imageFond":"./img/burnaboyfond.jpg"}
+
+             ]
+}

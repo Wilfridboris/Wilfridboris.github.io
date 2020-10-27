@@ -28,14 +28,14 @@
         <!--My left menu bar end-->
         <!--My central grid begin-->
         <div class="myGrid">
-                    <div class="Panel">
-                        <img src="/img/burnaboy-fond.jpg" alt="" width=" 1000px" height="500px">
+                    <div class="Panel" ng-controller="pane as pan">
+                        <img src="{{pan.fond}}" alt="" width=" 1000px" height="500px">
 
                                 <ul class="menu_list">
                                     <li><a  class="btn" href="#">Overwiew</a></li>
                                     <li><a class="btn" href="#">About</a></li>
                                 </ul>
-                                <h1 class="panel-title">Burna boy</h1>
+                                <h1 class="panel-title">{{pan.titreFond}}</h1>
                             
                         
                     </div>
