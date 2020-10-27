@@ -80,7 +80,7 @@
             </ul>
         </div>
         <div id="infos-center" class="infos-center">
-            <h2>ShorCuts</h2>
+            <h2>Popular</h2>
             <section ng-repeat="x in lfm.articles" class="logos">
                 <a id="{{x.title}}" ng-click="lfm.check($event)"  href="/artists/pages-artist/{{x.title}}.html">
                     <img src="{{x.image}}" height="150px" alt="{{x.title}}">
@@ -89,7 +89,7 @@
                 <a  href="#"><h1 id="writeBy">{{x.by}}</h1></a>
             </section>
 
-            <h2>Recents Add</h2>
+            <h2>Albums</h2>
             <section ng-repeat="x in lfm.articles" class="logos">
                 <a href="#"><h1>Unknown</h1></a>
             </section>
