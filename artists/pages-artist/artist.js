@@ -1,33 +1,75 @@
 (function(){
     //get all necessary files;
+    //fond of the artist
     var fondArtist;
+    var hash;
+    //artist best music
+    var ArtistBest;
+        /**first XXLHttpRequest */
     var xhr=new XMLHttpRequest();
     xhr.onload=function(){
         if(xhr.status===200){
+           
+
             responseObject=JSON.parse(xhr.responseText);
             fondArtist=responseObject.fondArtist;
+         
+           
             
         };
     };
+ 
+    
     xhr.open('GET','./database/fond.json',true);
     xhr.send(null);  
+    /**first XXLHttpRequest end */
+      /**second XXLHttpRequest begin */
+      var xhr2=new XMLHttpRequest();
+      xhr2.onload=function(){
+          if(xhr.status==200){
+              responseObject=JSON.parse(xhr2.responseText);
+              ArtistBest=responseObject;
+          };
+
+      };
+     
+     
+  
+    /**not in catch the urlLocation begin*/
     current=window.location.pathname;
     var artistName=current.split('/')[3];
     artistName=artistName.split('.')[0];
-    console.log(artistName);
-    console.log(current);
+    /**not in catch the urlLocation end*/
+
+    xhr2.open('GET','./database/'+artistName+'Best.json');
+    xhr2.send(null);
+    /**second XXLHttpRequest begin */
+
+   
+    
+ 
+    //console.log(artistName);
+    //console.log(current);
     
     var art=angular.module('arts',[]);
     art.controller('pane',function(){
+        this.artistBest=ArtistBest;
+        console.log(ArtistBest);
         for(var x in fondArtist){
             if(artistName==fondArtist[x].title){
                 this.fond=fondArtist[x].imageFond;
                 this.titreFond=fondArtist[x].title;
+                
             }
         }
+       
+        
+
 
     });
     art.controller("leftMenu",function($http){
+       
+       
         //this.articles=article;
         /*
         this.check=function(e){
