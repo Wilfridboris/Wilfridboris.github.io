@@ -39,6 +39,7 @@
     current=window.location.pathname;
     var artistName=current.split('/')[3];
     artistName=artistName.split('.')[0];
+    
     /**not in catch the urlLocation end*/
 
     xhr2.open('GET','./database/'+artistName+'Best.json');
@@ -54,7 +55,7 @@
     var art=angular.module('arts',[]);
     art.controller('pane',function(){
         this.artistBest=ArtistBest;
-        console.log(ArtistBest);
+        //console.log(ArtistBest);
         for(var x in fondArtist){
             if(artistName==fondArtist[x].title){
                 this.fond=fondArtist[x].imageFond;
