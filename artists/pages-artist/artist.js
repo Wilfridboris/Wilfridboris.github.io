@@ -27,8 +27,9 @@
       var xhr2=new XMLHttpRequest();
       xhr2.onload=function(){
           if(xhr.status==200){
-              responseObject=JSON.parse(xhr2.responseText);
-              ArtistBest=responseObject;
+              this.responseText=xhr2.responseText;
+              ArtistBest=JSON.parse(this.responseText);
+              
           };
 
       };
