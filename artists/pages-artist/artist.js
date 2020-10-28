@@ -20,15 +20,15 @@
     };
  
     
-    xhr.open('GET','./database/fond.json',true);
+    xhr.open('GET','database/fond.json',true);
     xhr.send(null);  
     /**first XXLHttpRequest end */
       /**second XXLHttpRequest begin */
       var xhr2=new XMLHttpRequest();
       xhr2.onload=function(){
           if(xhr.status==200){
-              this.responseText=xhr2.responseText;
-              ArtistBest=JSON.parse(this.responseText);
+              responseObject=JSON.parse(xhr2.responseText);
+              ArtistBest=responseObject;
               
           };
 
@@ -43,7 +43,7 @@
     
     /**not in catch the urlLocation end*/
 
-    xhr2.open('GET','./database/'+artistName+'Best.json');
+    xhr2.open('GET','database/'+artistName+'Best.json');
     xhr2.send(null);
     /**second XXLHttpRequest begin */
 
