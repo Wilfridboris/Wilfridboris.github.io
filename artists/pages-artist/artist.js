@@ -24,6 +24,7 @@
     xhr.send(null);  
     /**first XXLHttpRequest end */
       /**second XXLHttpRequest begin */
+      try{
       var xhr2=new XMLHttpRequest();
       xhr2.onload=function(){
           if(xhr.status==200){
@@ -45,6 +46,9 @@
 
     xhr2.open('GET','database/'+artistName+'Best.json');
     xhr2.send(null);
+    }catch(err){
+        
+    }
     /**second XXLHttpRequest begin */
 
    
