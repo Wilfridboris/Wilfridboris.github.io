@@ -3,19 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="base.css">
-    <title>TheScene</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Boris Kwayep</title>
 </head>
-<body ng-app="base">
-    <head-base></head-base>
-    <control-panel></control-panel>
-   <!-- <subscription></subscription>-->
+<body>
+    <main class="container-fluid">
+        <header>
+            <div class="navbar">
+        
+                <div class="menu">
+                   <ul class="menu-list">
+                       <li class="active"><a href="">Home</a></li>
+                       <li><a href="">Projects</a></li>
+                       <li><a href="">Forum</a></li>
+                       <li><a href="">FAQ</a></li>
+                   </ul>
+                   
+                </div>
+                <div class="searchBar float-left">
+                    <input type="text" id="search" class="mb-2" placeholder="search">
+                   
+                </div>
+                
+            </div>
+        </header>
+        <section class="row">
+            <div class="col-sm-2">
+             
+            </div>
+            <div class="col-sm-8">
+                <section class="Font-panel">
+                    <h1>Welcome</h1>
+                    <p>be the first to share your blog with the world with power SEO integration.</p>
+                    <button class="btx">Create a Blog</button>
+                    <button class="btx">View Content</button>
+                </section>
+            </div>
+            <div class="col-sm-2">
+               
+            </div>
+        </section>
+
+        
+          
     
-  
-<!--Loads angular.js-->
-<script src="./dependencie/angular.min.js"></script>
-<script src="./dependencie/jquery.js"></script>
-<!--Loads my base module-->
-<script src="base.js"></script>
+    </main>
 </body>
 </html>
