@@ -121,10 +121,21 @@ padding-right: 10px;
     .btx:active{
         background-color: rgb(123, 131, 247);
     }
-
-    .Font-panel{
-        margin-top: 40px;
+    .contenu{
+        text-align: center;
+        
+        
     }
+    .Font{
+        display: inline-block;
+     
+    }
+    header{
+        padding-bottom: 30px ;
+        
+    }
+ 
+
 
 
 
