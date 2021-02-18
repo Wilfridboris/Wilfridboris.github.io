@@ -41,8 +41,9 @@ padding-right: 10px;
    
 
 .searchBar input{
-    outline: none;
-    border-radius: 50px;
+   border: 1px solid #ddd;
+   outline-style: hidden;
+   outline-color:  rgb(99, 108, 238);
     width: 210px;
     
     
@@ -80,6 +81,7 @@ padding-right: 10px;
 }
 .head-panel{
     background-image: url("/img/head-design.png");
+    background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
    
