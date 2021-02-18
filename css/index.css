@@ -43,7 +43,9 @@ padding-right: 10px;
 .searchBar input{
     outline: none;
     border-radius: 50px;
-    width: 300px;
+    width: 210px;
+    
+    
     
 }
 
@@ -140,5 +142,7 @@ padding-right: 10px;
         }
         .searchBar{
             order: 2;
+           
         }
+      
     }
