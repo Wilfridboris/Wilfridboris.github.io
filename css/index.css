@@ -41,14 +41,16 @@ padding-right: 10px;
    
 
 .searchBar input{
+ 
    border: 1px solid #ddd;
    outline-style: hidden;
    outline-color:  rgb(99, 108, 238);
     width: 210px;
     
-    
-    
+   
+
 }
+
 
 .menu-list{
     display: flex;
