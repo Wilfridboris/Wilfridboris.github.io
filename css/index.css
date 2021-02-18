@@ -109,11 +109,14 @@ padding-right: 10px;
     border: 1px solid blue;
     margin-right: 10px;
     cursor: pointer;
+    margin: 20px 0px;
     
     }
     .btx:hover{
         background-color: rgb(99, 108, 238);
         color: #f7fff7;
+        
+        
     }
     .btx:focus{
         outline: 0;
@@ -128,12 +131,18 @@ padding-right: 10px;
     }
     .Font{
         display: inline-block;
+        width: 400px;
+        
      
     }
     header{
         padding-bottom: 30px ;
         
     }
+   .image{
+       width:150px;
+   }
+ 
  
 
 
