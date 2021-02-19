@@ -130,7 +130,7 @@ padding-right: 10px;
     }
     .Font{
         display: inline-block;
-        width: 400px;
+        width: 100%;
         
      
     }
@@ -138,9 +138,10 @@ padding-right: 10px;
         padding-bottom: 30px ;
         
     }
-   .image{
-       width:150px;
-   }
+    .Font h1{
+        font-size: 16px;
+    }
+   
 
    /*space begin*/
    .space{
@@ -160,6 +161,7 @@ padding-right: 10px;
    .cadre1 ,.cadre2 ,.cadre3{
     display: inline-block;
     width: 300px;
+    
     
    }
     /*conatainer 2 end*/
@@ -184,10 +186,25 @@ padding-right: 10px;
         }
         .logo{
             order: 0;
+            
         }
         .searchBar{
             order: 2;
            
+        }
+        .button-list h1{
+            font-size: 30px;
+            
+        }
+        .button-list{
+            width: 400px;
+        }
+        .image{
+            width: 150px;
+        }
+        .image h1{
+            font-size: 80px;
+            color: rgb(73, 79, 168); 
         }
       
     }
