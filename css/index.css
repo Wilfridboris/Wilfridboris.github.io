@@ -152,7 +152,7 @@ text-align: left;
    }
    /*space end*/
    /*conatainer 2 begin*/
-   .contenu2{
+   .contenu2,.contenu3,.contenu4{
     text-align: center;
     
    }
