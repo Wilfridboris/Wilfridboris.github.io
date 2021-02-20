@@ -29,7 +29,8 @@ nav{
 .item{
     width: 100%;
     text-align: center;
-    display: none;
+    display: none;  
+    order: 3;
     
     
 }
@@ -38,6 +39,7 @@ font-size: 20px;
 padding-right: 10px;
 flex: 1;
 text-align: left;
+order: 1;
 
 }
    
@@ -67,10 +69,13 @@ text-align: left;
 }
 .menu-list li{
     list-style-type: none;
-    display: block;
     padding: 5px 30px 5px 30px;
     
    
+}
+/*toggle display the items*/
+.select .item{
+    display: block;
 }
 .active{
     border-bottom: 2px solid rgb(99, 108, 238);
@@ -168,7 +173,10 @@ text-align: left;
    }
     /*conatainer 2 end*/
  
- 
+ .toggle{
+     order: 2;
+ }
+
 
 
 
@@ -207,6 +215,9 @@ text-align: left;
         .image h1{
             font-size: 80px;
             color: rgb(73, 79, 168); 
+        }
+        .toggle{
+            display: none;
         }
       
     }
