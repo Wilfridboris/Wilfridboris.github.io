@@ -165,6 +165,9 @@ order: 1;
        color: rgb(123, 131, 247);
        margin-bottom: 20px;
    }
+p{
+    color: rgb(56, 56, 56);
+}
    .cadre1 ,.cadre2 ,.cadre3{
     display: inline-block;
     width: 300px;

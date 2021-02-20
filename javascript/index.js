@@ -1,5 +1,6 @@
 const toogle=document.querySelector(".toggle");
 const menu=document.querySelector(".menu-list");
+const git=document.getElementById("git");
 
 /*Toogle**/
 function toogleMenu(){
@@ -13,3 +14,6 @@ function toogleMenu(){
     }
 } 
 toogle.addEventListener("click",toogleMenu,false);
+git.addEventListener("click",function(){
+    window.location="https://github.com/Wilfridboris";
+},false)
